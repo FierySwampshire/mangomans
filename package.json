@@ -1,15 +1,26 @@
 {
   "name": "r_mi",
   "version": "0.1.0",
-  "private": true,
+  "description": "an app for my friend",
+  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
+  "keywords": [],
+  "author": "anmol-M-0",
+  "license": "MPL",
   "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.1",
     "next": "10.2.0",
+    "nprogress": "^0.2.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-awesome-slider": "^4.1.0",
+    "react-dom": "17.0.2",
+    "react-popper": "^2.2.5",
+    "react-slick": "^0.28.1",
+    "reactstrap": "^8.9.0"
   }
 }

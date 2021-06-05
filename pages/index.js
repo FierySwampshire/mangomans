@@ -6,6 +6,9 @@ import React from "react";
 import { UncontrolledCarousel, Row, Col } from "reactstrap";
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
+
+
+
 const PgCards = ()=> (
   <div className={styles.grid}>
           <a  className={styles.card}>
@@ -39,28 +42,27 @@ const PgCards = ()=> (
 )
 const items = [
   {
-    src: "/mango1.jpg",
-    altText: "Slide 1",
-    caption: "",
-    header: "",
-    key: "1",
+    source: '/mango1.jpg',
   },
   {
-    src: "/mango2.jpg",
-    altText: "Slide 2",
-    caption: "",
-    header: "",
-    key: "2",
+    source: '/mango2.jpg',
   },
   {
-    src: "/mango3.jpg",
-    altText: "Slide 3",
-    caption: "",
-    header: "",
-    key: "3",
-  },
-];
+    source: '/mango3.jpg',
+  }, 
+  {
+    source: 'mangovid1.mp4'
+  }, {
+    source: 'brochure.jpg'
+  }
+]
 
+const Slider1 = ()=>(
+  <AwesomeSlider 
+    media={items} 
+    className='sliderclass'
+  />
+);
 const Example = () => (
   <Row>
     <Col md="8" className="mx-auto">
@@ -68,24 +70,14 @@ const Example = () => (
     </Col>
   </Row>
 );
-const Slider1 = ()=>(
-  <AwesomeSlider
-    media={[
-      {
-        source: '/mango1.jpg',
-      },
-      {
-        source: '/mango2.jpg',
-      },
-      {
-        source: '/mango3.jpg',
-      },
-    ]}
-  />
-);
-export default function Home() {
+
+const BrochureElem = () => (
+  <img src='/brochure.jpg' className='brochureElem'/>
+)
+function Home() {
   return (
-    <Layout title="R_Mi Mangoes">
+    <Layout >
+      <Slider1 /> 
     <div className={styles.container}>
       <Head>
         <meta name="description" content="R_Mi mangoes, taste the alphonso" />
@@ -99,14 +91,13 @@ export default function Home() {
         
         
       </main>
-
       
     </div>
-          <Slider1 />
-          
-
-          
-          
+     
+   
+        
     </Layout>
   )
 }
+
+export default Home

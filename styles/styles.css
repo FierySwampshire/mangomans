@@ -4,23 +4,129 @@
     align-items: center;
     flex-direction: column;
   }
-  header {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      padding: 12px;
-      font-size: 1.2rem;
-      margin: 0;
-      background: indigo;
+  
+  .navflex {
+    height: 95px;
+    display: flex;
+    justify-content: space-around;
+    width: calc(100%);
+    padding: 12px;
+    font-size: 1.2rem;
+    -webkit-box-align: center;
+    align-items:center; 
+    margin: 0;
+    background: rgba(216, 171, 73, 0.6);
+    border-bottom: 3px solid rgb(73 184 24 / 60%);
+    z-index: 5;
+
+
   }
+  .logo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding: auto;
+    padding: 12px;
+    align-items: center;
+  }
+  .logo img {
+    height: 3rem;
+    border-radius: 20px;
+    width:  3rem;
+  }
+  .footerflex {
+    
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    width: calc(100%);
+    font-size: 1.2rem;
+    color: white;
+    -webkit-box-align: center;
+    align-items:center;    
+    padding-bottom: 60px;
+    border-top: 3px solid rgb(73 184 24 / 60%);
+    z-index: 5;
+    background-color: #333333;
+    padding-bottom: 60px;
+  }
+  /* .logoflex {
+    
+} */
+.sliderclass {
+  border-radius: 30px;
+}
   header a {
-    color: darkgrey;
-    text-decoration: none;
+    color: rgb(124, 40, 40);
+    text-decoration: none;  
   }
   header a:hover {
     font-weight: bold;
-    color: lightgrey;
+    color: rgb(124, 40, 40);
   }
   footer {
     padding: 1em;
+  }
+  .footer-basic {
+    border-top: 3px solid rgb(73 184 24 / 60%);
+    width: 100%;
+    padding:40px 0;
+    background: #000;;
+    color:#fff;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+    color: #fff;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    
+    border:1px solid #fff;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
   }

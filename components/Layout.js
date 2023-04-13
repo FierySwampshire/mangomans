@@ -41,7 +41,7 @@ const Layout = ({ children, title, footnote }) => (
             </Link>
 
             <Link href="/gallary">
-                <a>gallary</a>
+                <a>gallery</a>
             </Link>
 
         </header>
